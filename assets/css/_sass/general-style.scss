@@ -1,0 +1,116 @@
+body {
+  font-family: 'Fira Code', monospace;
+  background-color: $background-color;
+  color: $text-color;
+  font-size: 1.2em;
+  margin: 0em auto;
+  margin-bottom: 2em;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+
+main {
+  max-width: $content-width;
+  margin: auto;
+  padding: 1em;
+  padding-bottom: 5em;
+  margin-top: 2em;
+}
+
+.main-home {
+  margin-top: 0em;
+}
+
+.fa-brands, .fa-solid {
+  font-size: 2em;
+  margin: 0.3em;
+  ////color: $text-color;
+}
+
+h1,h2,h3, {
+  font-weight: 600;
+  margin: 0;
+  text-transform: inherit;
+  color: $title-color;
+}
+
+a {
+  color: $text-color;
+  text-decoration: none;
+  font-weight: bold;
+  &:hover {
+    color: $link-color;
+    opacity: 40%;
+  }
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Profile style for the home picture */
+.profile {
+  border-style: solid;
+  border-color: $link-color;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border-radius: 50%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+// adjust tile sizes on smaller screens
+@include media-query($on-phone) {
+  @media screen and (max-width: $on-phone){
+    .profile {
+      width: 40%;
+    }
+
+  }
+}
+/* --- */
+
+.button {
+  background-color: $title-color;
+  border: none;
+  border-radius: 0.5em;
+  //color: white;
+  padding: 0.5em 1em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+    //margin: 0.5em 0em 0em 30em;
+  cursor: pointer;
+}
+
+/* --- */
+
+@include media-query($on-palm) {
+  @media screen and (max-width: $on-palm){
+    body {
+      //font-size: 0.75em;
+      font-size: calc(1.2em * 75/100);
+    }
+  }
+}
+
+@include media-query($on-phone) {
+  @media screen and (max-width: $on-phone){
+    body {
+      //font-size: 0.75em;
+      font-size: calc(1.2em * 60/100);
+    }
+  }
+}

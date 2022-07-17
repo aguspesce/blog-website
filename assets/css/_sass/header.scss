@@ -1,0 +1,24 @@
+header {
+  // background-image: url("/blog-agus/assets/images/naranja.png");
+  background-color: $background-color;
+  height: calc(70vh - 6em);
+  background-size: cover;
+  margin: 0em;
+  margin-bottom: 0em;
+  padding-top: 17em;
+  text-align: center;
+  h1 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: 700;
+  }
+  h2 {
+    margin-bottom: 1.5em;
+    margin-top: 0.75em;
+    font-style: italic;
+  }
+
+}
+
+
+

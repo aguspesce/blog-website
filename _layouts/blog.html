@@ -1,0 +1,42 @@
+---
+layout: base
+---
+
+<main>
+
+  <h1>Blog</h1>
+
+  {% if site.show_categories %}
+  <ul class="categories-list">
+    {% for category in site.categories %}
+        {% capture category_name %}{{ category | first }}{% endcapture %}
+      <li>
+        <h2 class="category">{{ category_name }}</h2>
+        <ul class="posts-list">
+        {% for post in site.categories[category_name] %}
+            <li>
+              <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+              <p><em>{{ post.date | date: "%Y-%m-%d"}}</em></p>
+              {% if site.show-excerpt %}<p>{{ post.excerpt }}</p>{% endif %}
+            <li>
+        {% endfor %}
+        </ul>
+        </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <ul class="posts-list">
+    {% for post in site.posts %}
+    <li>
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      <p><em>{{ post.date | date: "%Y-%m-%d"}}</em></p>
+      {% if site.show-excerpt %}<p>{{ post.excerpt }}</p>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  {{ content }}
+</main>
+
+{% include footer.html %}
