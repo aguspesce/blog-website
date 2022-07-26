@@ -1,21 +1,23 @@
 header {
   // background-image: url("/blog-agus/assets/images/naranja.png");
   background-color: $background-color;
-  height: calc(70vh - 6em);
+  height: calc(70vh - 6rem);
   background-size: cover;
-  margin: 0em;
-  margin-bottom: 0em;
-  padding-top: 17em;
+  margin: 0;
+  margin-bottom: 0;
+  padding-top: 17rem;
   text-align: center;
   h1 {
     margin: 0;
-    font-size: 3em;
+    font-size: 3rem;
     font-weight: 700;
   }
   h2 {
-    margin-bottom: 1.5em;
-    margin-top: 0.75em;
+    margin-bottom: 1.5rem;
+    margin-top: 0.75rem;
     font-style: italic;
+    font-weight: 700;
+    font-size: 2rem;
   }
 
 }

@@ -2,9 +2,9 @@ body {
   font-family: 'Fira Code', monospace;
   background-color: $background-color;
   color: $text-color;
-  font-size: 1.2em;
-  margin: 0em auto;
-  margin-bottom: 2em;
+  font-size: 1.2rem;
+  margin: 0rem auto;
+  margin-bottom: 2rem;
   font-weight: 400;
   text-rendering: optimizeLegibility;
 }
@@ -12,18 +12,19 @@ body {
 main {
   max-width: $content-width;
   margin: auto;
-  padding: 1em;
-  padding-bottom: 5em;
-  margin-top: 2em;
+  padding: 1rem;
+  padding-bottom: 5rem;
+  margin-top: 2rem;
 }
 
 .main-home {
-  margin-top: 0em;
+  margin-top: 0rem;
 }
 
 .fa-brands, .fa-solid {
-  font-size: 2em;
-  margin: 0.3em;
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0.3rem;
   ////color: $text-color;
 }
 
@@ -37,7 +38,7 @@ h1,h2,h3, {
 a {
   color: $text-color;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
   &:hover {
     color: $link-color;
     opacity: 40%;
@@ -66,7 +67,6 @@ img {
 .left {
   float: left;
 }
-
 .right {
   float: right;
 }
@@ -85,14 +85,13 @@ img {
 .button {
   background-color: $title-color;
   border: none;
-  border-radius: 0.5em;
-  //color: white;
-  padding: 0.5em 1em;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-    //margin: 0.5em 0em 0em 30em;
   cursor: pointer;
+  font-weight: 500;
 }
 
 /* --- */
@@ -101,7 +100,7 @@ img {
   @media screen and (max-width: $on-palm){
     body {
       //font-size: 0.75em;
-      font-size: calc(1.2em * 75/100);
+      // font-size: calc(1.2em * 75/100);
     }
   }
 }
@@ -110,7 +109,7 @@ img {
   @media screen and (max-width: $on-phone){
     body {
       //font-size: 0.75em;
-      font-size: calc(1.2em * 60/100);
+      // font-size: calc(1.2em * 60/100);
     }
   }
 }
