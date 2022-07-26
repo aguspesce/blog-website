@@ -11,8 +11,11 @@ layout: base
     width="33.33%"
     src="{{ page.profile.image | prepend: '/assets/images/' | prepend: site.baseurl | prepend: site.url }}"
   />
-  {% endif %} {% endif %} {{ content }}
-  <a href="#" class="button">Link Button</a>
+  {% endif %} {% endif %}
+
+<!--   <h2>A bit about me</h2> -->
+  {{ content }}
+  <a href="about/" class="button"> More about me </a>
 </main>
 
 {% include footer.html %}
